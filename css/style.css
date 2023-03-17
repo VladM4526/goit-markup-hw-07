@@ -1,0 +1,1051 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --Primary-Brand: #4D5AE5;
+    --Primary-Brand-rgba: rgba(77, 90, 229, 0.9);
+    --Pressed-state: #404BBF;
+    --modal-overlay: rgba(46, 47, 66, 0.4);
+    --Dark: #2E2F42;
+    --Text: #434455;
+    --Light: #F4F4FD;
+    --White: #FFFFFF;
+    --Accent: #E7E9FC;
+    --Cloud: #F4F4FD;
+    --Subtle-Text: #8E8F99;
+    --Success: #31D0AA;
+    --border-button: rgba(0, 0, 0, 0.1);
+    --input-footer-rgba: rgba(255, 255, 255, 0.3);
+    --input-footer-color-input: rgba(255, 255, 255, 0.6);
+    --input-modal-form-border: rgba(33, 33, 33, 0.2);
+    --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);;
+}
+
+
+/*Header*/
+
+.webstudio-header-container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.webstudio-header {
+    padding: 25px 0;
+}
+
+.webstudio-header-portfolio {
+    padding: 24px 0;
+    border: 1px solid var(--Accent);
+}
+
+.webstudio-nav {
+    display: flex;
+}
+
+.webstudio-nav-logo {
+    color: var(--Dark);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+}
+
+.webstudio-nav-link-color {
+    color: var(--Primary-Brand);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.webstudio-header-menu-list {
+    margin-left: 76px;
+    list-style: none;
+}
+
+.webstudio-header-menu-link {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--Dark);
+    text-decoration: none;
+    position: relative;
+}
+
+.webstudio-header-menu-item {
+    display: inline-block;
+    margin: 0px 0px 0px 40px;
+}
+
+.webstudio-header-contant-list-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--Dark);
+    text-decoration: none;
+}
+
+.webstudio-header-contant-list-item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.webstudio-header-menu-link-active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--Pressed-state);
+    border-bottom: 1px solid var(--Pressed-state);
+    border-radius: 2px;
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+
+.webstudio-header-menu-link:is(:hover, :focus) {
+    color: var(--Pressed-state);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-header-contant-list-item:last-child {
+    margin-right: 0px;
+}
+
+.webstudio-header-contant-list:first-child {
+    margin-left: 0px;
+}
+
+.webstudio-header-menu-item {
+    margin-left: 40px;
+}
+
+.webstudio-header-menu-item:first-child {
+    margin-left: 0px;
+}
+
+.webstudio-header-contant {
+    margin-left: auto;
+    list-style: none;
+}
+
+.webstudio-header-contant-list {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.webstudio-header-contant a {
+    color: var(--Text);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.webstudio-header-contant-list-link:is(:hover, :focus) {
+    color: var(--Pressed-state);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-header-contant-list-item:first-child {
+    margin-left: 0px;
+}
+
+/*Effective Solutions for Your Business*/
+
+.webstudio-service {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url("../images/people-office-edited.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 188px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webstudio-service-container {
+    width: 1158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.webstudio-service-text {
+    width: 496px;
+    color: var(--White);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+.webstudio-service-button {
+    border: none;
+    outline: none;
+    background: var(--Primary-Brand);
+    color: var(--White);
+    padding: 15px 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 50px;
+}
+
+.webstudio-service-button:is(:hover, :focus) {
+    background: var(--Pressed-state);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/** Modal Effective Solutions for Your Business*/
+
+.webstudio-modal-overlay {
+    width: 100%;
+    height: 100%;
+    background: var(--modal-overlay);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.webstudio-modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    height: 584px;
+    background: var(--White);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.25s linear;
+}
+
+.webstudio-modal-overlay.is-hidden .webstudio-modal-window {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.webstudio-modal-window-close-button {
+    background: var(--Accent);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--border-button);
+    position: relative;
+    left: 360px;
+    top: 24px;
+    cursor: pointer;
+    transition: 0.25s linear;
+}
+
+.webstudio-modal-window-icon {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 1px;
+}
+
+.webstudio-modal-window-close-button:is(:hover, :focus) {
+    background: var(--Primary-Brand);
+    fill: var(--Accent);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Form title */
+
+.webstudio-modal-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 52px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--Dark);
+}
+
+/* Form data */
+
+.webstudio-modal-form-data {
+    display: block;
+    margin: 16px 24px;
+}
+
+.webstudio-modal-form-data-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    color: var(--Subtle-Text);
+}
+
+.webstudio-modal-form-data-label-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.webstudio-modal-form-container {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.webstudio-modal-form-input {
+    width: 360px;
+    border: none;
+    outline: none;
+    border: 1px solid var(--input-modal-form-border);
+    border-radius: 4px;
+    padding: 11px 38px;
+    margin-top: 4px;
+}
+
+.webstudio-modal-form-input-icon {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    display: block;
+    fill: var(--Dark);
+}
+
+.webstudio-modal-form-input-icon-style {
+    width: 18px;
+    height: 18px;
+}
+
+/* border + fill when on click effect */
+
+.webstudio-modal-form-input:focus {
+    border: 1px solid var(--Primary-Brand);
+    color: #000000;
+}
+
+.webstudio-modal-form-input:focus + .webstudio-modal-form-input-icon {
+    fill: var(--Pressed-state);
+}
+
+.webstudio-modal-form-item-comment {
+    width: 360px;
+    height: 120px;
+    border: none;
+    outline: none;
+    border: 1px solid var(--input-modal-form-border);
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-top: 4px;
+}
+
+.webstudio-modal-form-item-comment::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    color: var(--teatarea-comment-rgba);
+}
+
+.webstudio-modal-form-data-label-checkbox {
+    width: 360px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.webstudio-modal-form-input-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--Dark);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-modal-form-input-checkbox-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    fill: var(--White);
+    padding: 4px;
+}
+
+.webstudio-modal-form-input-checkbox:checked + .webstudio-modal-form-input-checkbox-icon {
+    fill: var(--White);
+    background: var(--Pressed-state);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-modal-form-data-title-checkbox {
+    width: 338px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    color: var(--Subtle-Text);
+    margin-left: 8px;
+}
+
+.webstudio-modal-form-data-title-rules {
+    text-decoration-line: underline;
+    color: var(--Primary-Brand);
+}
+
+.webstudio-modal-form-data-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.webstudio-modal-form-data-button {
+    width: 169px;
+    height: 56px;
+    border: none;
+    outline: none;
+    background: var(--Primary-Brand);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--White);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-modal-form-data-button:is(:hover, :focus) {
+    cursor: pointer;
+    background: var(--Pressed-state);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/*Services*/
+
+.webstudio-services {
+    margin-top: 120px;
+}
+
+.webstudio-services-container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webstudio-services-text-list {
+    display: flex;
+}
+
+.webstudio-services-text-item:first-child {
+    margin-left: 0px;
+}
+
+.webstudio-services-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.webstudio-services-title-text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+.webstudio-services-text {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 70px;
+}
+
+.webstudio-services-text-item {
+    margin-left: 24px;
+    list-style: none;
+}
+
+.webstudio-services-item-svg {
+    width: 264px;
+    height: 112px;
+    background: var(--Light);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 100px;
+}
+
+.webstudio-services-item-icon {
+    height: 64px;
+}
+
+/*Our jobs*/
+
+.webstudio-our-jobs {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.webstudio-our-jobs-container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webstudio-our-jobs-text-list {
+    display: flex;
+    margin-top: 72px;
+}
+
+.webstudio-our-jobs-text-item {
+    margin-left: 24px;
+    list-style: none;
+}
+
+.webstudio-our-jobs-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+}
+
+.webstudio-our-jobs-text-item:first-child {
+    margin-left: 0px;
+}
+
+/*Our team*/
+
+.webstudio-our-team {
+    background: var(--Light);
+    height: 732px;
+}
+
+.webstudio-our-team-container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webstudio-our-team-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.webstudio-our-team-cards {
+    width: 264px;
+    height: 428px;
+    display: flex;
+    margin-top: 72px;
+}
+
+.webstudio-our-team-cards-employee {
+    margin-left: 24px;
+}
+
+.webstudio-our-team-cards-employee {
+    background: var(--White);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+}
+
+.webstudio-our-team-cards-title-list {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.webstudio-our-team-cards-text-list {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.webstudio-our-team-cards {
+    list-style: none;
+}
+
+.webstudio-our-team-cards-employee-titles {
+    padding: 32px 16px;
+}
+
+.webstudio-our-team-cards-employee-social-media-container {
+    width: 232px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 8px;
+}
+
+.webstudio-our-team-cards-employee-social-media-list {
+    border-radius: 50%;
+    background: var(--Primary-Brand);
+    margin-left: 24px;
+}
+
+.webstudio-our-team-cards-employee-social-media-icon {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-our-team-cards-employee-social-media-list:first-child {
+    margin-left: 0px;
+}
+
+.webstudio-our-team-cards-employee:first-child {
+    margin-left: 0px;
+}
+
+.webstudio-our-team-cards-employee-social-media-list:is(:hover, :focus) {
+    background: var(--Pressed-state);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Our Customers */
+
+.webstudio-our-customers-container {
+    margin-bottom: 120px;
+}
+
+.webstudio-our-customers-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-top: 130px;
+}
+
+.webstudio-our-customers-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+.webstudio-our-customers-list-item {
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--Subtle-Text);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.webstudio-our-customers-list-item-icon {
+    height: 46px;
+    fill: var(--Subtle-Text);
+}
+
+.webstudio-our-customers-list-item:is(:hover, :focus) .webstudio-our-customers-list-item-icon {
+    fill: var(--Pressed-state);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-our-customers-list-item:hover {
+    border: 1px solid var(--Pressed-state);
+    cursor: pointer;
+}
+
+.webstudio-our-customers-list-item:first-child {
+    margin-left: 0px;
+}
+
+/*Filter portfolio jobs*/
+
+.webstudio-filter-portfolio-jobs-container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.webstudio-filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 96px;
+}
+
+.webstudio-services-style-buttons-items {
+    margin-left: 24px;
+}
+
+.webstudio-services-style-buttons {
+    border: none;
+    outline: none;
+    background: var(--Light);
+    color: var(--Primary-Brand);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 24px;
+}
+
+.webstudio-services-style-buttons:is(:hover, :focus) {
+    background: var(--Pressed-state);
+    color: var(--White);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-services-style-buttons-items:first-child {
+    margin-left: 0px;
+}
+
+/*filter-portfolio-jobs*/
+
+.webstudio-filter-portfolio-jobs-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items {
+    width: 360px;
+    background: var(--White);
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-bottom: 48px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items-styles {
+    border-left: 1px solid var(--Accent);
+    border-right: 1px solid var(--Accent);
+    border-bottom: 1px solid var(--Accent);
+    padding: 32px 16px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items-titles {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--Dark);
+}
+
+.webstudio-filter-portfolio-jobs-cards-items-texts {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-top: 8px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items:nth-child(3n + 1) {
+    margin-left: 0px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items:nth-child(n + 7) {
+    margin-bottom: 0px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items:is(:hover, :focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-filter-portfolio-jobs-cards-items-overlay-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items-overlay {
+    width: 360px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--Primary-Brand-rgba);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--White);
+    transform: translate(0, 100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-filter-portfolio-jobs-cards-items-overlay-text {
+    width: 296px;
+    position: absolute;
+    left: 32px;
+    top: 40px;
+}
+
+.webstudio-filter-portfolio-jobs-cards-items:is(:hover, :focus) .webstudio-filter-portfolio-jobs-cards-items-overlay {
+    transform: translate(0%, 0%);
+    transition: 1200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*Footer*/
+
+.webstudio-footer-home {
+    background: var(--Dark);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0;
+}
+
+.webstudio-footer-home-container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+
+.webstudio-footer-container-logo-text {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.webstudio-footer-container-text {
+    width: 264px;
+}
+
+.webstudio-footer-logo {
+    color: var(--Cloud);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+}
+
+.webstudio-footer-link-color {
+    color: var(--Primary-Brand);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.webstudio-footer-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--Accent);
+    margin-top: 15px;
+    letter-spacing: 0.02em;
+}
+
+.webstudio-footer-social-media-container {
+    width: 208px;
+    height: 80px;
+    margin-left: 120px;
+}
+
+.webstudio-footer-social-media-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--White);
+}
+
+.webstudio-footer-social-media-list {
+    margin-top: 16px;
+}
+
+.webstudio-footer-social-media-list-item {
+    display: block;
+    width: 208px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 16px;
+}
+
+.webstudio-footer-social-media-list-item-icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+}
+
+.webstudio-footer-social-media-list {
+    list-style: none;
+    display: flex;
+}
+
+.webstudio-footer-social-media-list-item:first-child {
+    margin-left: 0px;
+}
+
+.webstudio-footer-social-media-list-item:is(:hover, :focus) {
+    cursor: pointer;
+    background: var(--Success);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* form footer */
+
+.webstudio-footer-form-subscribe-container {
+    margin-left: 80px;
+}
+
+.webstudio-footer-form-subscribe-form {
+    width: 453px;
+    height: 80px;
+}
+
+.webstudio-footer-form-subscribe-label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--White);
+    display: flex;
+}
+
+.webstudio-footer-form-subscribe-input-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.webstudio-footer-form-subscribe-input {
+    width: 264px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--input-footer-rgba);
+    color: var(--input-footer-color-input);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    padding: 8px 16px;
+    margin-top: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.webstudio-footer-form-subscribe-button {
+    width: 165px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: var(--Primary-Brand);
+    border-radius: 4px;
+    color: var(--White);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 8px 24px;
+    gap: 16px;
+    margin-left: 24px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-footer-form-subscribe-svg-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.webstudio-footer-form-subscribe-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: var(--input-footer-color-input);
+}
+
+.webstudio-footer-form-subscribe-button:is(:hover, :focus) {
+    cursor: pointer;
+    background: var(--Pressed-state);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
