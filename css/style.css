@@ -259,6 +259,7 @@
     display: block;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.25s linear;
+    padding: 72px 24px 24px 24px;
 }
 
 .webstudio-modal-overlay.is-hidden .webstudio-modal-window {
@@ -271,8 +272,8 @@
     height: 24px;
     border-radius: 50%;
     border: 1px solid var(--border-button);
-    position: relative;
-    left: 360px;
+    position: absolute;
+    right: 24px;
     top: 24px;
     cursor: pointer;
     transition: 0.25s linear;
@@ -296,7 +297,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 52px;
+    padding-bottom: 16px;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--Dark);
@@ -306,7 +307,6 @@
 
 .webstudio-modal-form-data {
     display: block;
-    margin: 16px 24px;
 }
 
 .webstudio-modal-form-data-title {
