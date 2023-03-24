@@ -24,12 +24,22 @@ screen and (min-resolution: 2dppx) and (max-width: 480px) {
 
         /* menu section */
 
-    .webstudio-header-menu-list,
+
+
     .webstudio-header-contant {
         display: none;
     }
 
-    .webstudio-modal-window-close-button-phone {
+    .webstudio-nav-logo {
+        display: block;
+        margin-left: 16px;
+    }
+
+    .webstudio-nav-logo-menu {
+        display: none;
+    }
+
+    .webstudio-modal-menu-close-button {
         display: block;
         background: var(--Accent);
         width: 24px;
@@ -37,25 +47,48 @@ screen and (min-resolution: 2dppx) and (max-width: 480px) {
         border-radius: 50%;
         border: 1px solid var(--border-button);
         position: absolute;
-        left: 425px;
+        left: 380px;
         top: 24px;
         cursor: pointer;
         transition: 0.25s linear;
     }
     
-    .webstudio-modal-window-close-button-phone:is(:hover, :focus) {
+    .webstudio-modal-menu-close-button:is(:hover, :focus) {
         background: var(--Primary-Brand);
         fill: var(--Accent);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .webstudio-header {
+    .webstudio-header-menu-modal {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: var(--Light);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .webstudio-header-container {
         width: 428px;
+        height: 796px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .webstudio-nav-menu-mobile {
+        width: 396px;
+        height: 22px;
+        display: flex;
+        align-items: center;
     }
 
     .webstudio-nav {
         display: flex;
-        align-items: center;
+        flex-direction: column;
     }
 
     .webstudio-nav-logo {
@@ -64,131 +97,101 @@ screen and (min-resolution: 2dppx) and (max-width: 480px) {
         margin-right: 16px;
     }
 
-    .webstudio-header-responsive-menu-container {
+    .webstudio-header-menu-list-phone {
         display: block;
+        width: 151px;
+        height: 200px;
+        margin-left: 40px;
+        margin-top: 80px;
     }
 
-    .webstudio-header-container {
-        width: 428px;
+    .webstudio-header-menu-link {
+        display: inline;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
     }
 
-    .webstudio-header-responsive-menu-logo-icon {
+    .webstudio-header-menu-item {
+        margin-top: 40px;
+    }
+
+    .webstudio-header-menu-item:first-child {
+        margin-top: 0px;
+    }
+
+    .webstudio-header-menu-item:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .webstudio-header-menu-item:nth-child(3) {
+        margin-left: 0px;
+    }
+
+    .webstudio-header-menu-link-active::after {
+        display: none;
+    }
+
+    /* contant section menu */
+
+    .webstudio-header-contant {
+        width: 337px;
+        height: 104px;
         display: block;
+        margin-top: 284px;
+    }
+
+    .webstudio-header-contant-list {
+        display: flex;
+        flex-direction: column-reverse;
+        position: absolute;
+        left: 40px;
+    }
+
+    .webstudio-header-contant-list-item {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        margin-bottom: 40px;
+    }
+
+    .webstudio-header-contant .webstudio-header-contant-list-link-phone {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.1;
+        text-transform: capitalize;
     }
     
     .webstudio-header-responsive-icon {
         display: block;
         position: relative;
+        top: 0;
         left: 289px;
         width: 32px;
         height: 32px;
         fill: var(--Dark);
     }
 
-    .webstudio-header-responsive-menu-list {
-        display: none;
-        width: 100%;
-        height: 100%;
-        background: var(--White);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        padding: 80px 40px;
-    }
-
-    .webstudio-header-responsive-menu-container {
-        width: 100%;
-        height: 796px;
-    }
-
-    .webstudio-header-menu-list-phone {
-        list-style: none;
-    }
-
-    .webstudio-header-menu-responsive-link {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        text-decoration: none;
-        color: var(--Dark);
-    }
-
-    .webstudio-header-menu-responsive-link:is(:hover, :focus) {
-        color: var(--Pressed-state);
-    }
-
-    .webstudio-header-menu-phone-item {
-        margin-top: 40px;
-    }
-
-    .webstudio-header-menu-phone-item:first-child {
-        margin-top: 0px;
-    }
-
     .is-open {
         display: block;
     }
 
-    /* contant section menu */
-
-    .webstudio-header-contant-phone {
-        display: block;
-        height: 104px;
-    }
-
-    .webstudio-header-contant-list-phone {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .webstudio-header-contant-list-link-phone {
-        text-decoration: none;
-        color: var(--Text);
-    }
-
-    .webstudio-header-contant-list-item-phone {
-        margin-top: 40px;
-    }
-
-    .webstudio-header-contant-list-item-phone:first-child {
-        margin-top: 0px;
-    }
-
-    .webstudio-header-contant-phone-container {
-        margin-top: 284px;
-    }
-
-    .webstudio-header-contant-list-link-phone-contant-phone {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 1.1;
-        text-transform: capitalize;
-    }
-
-    .webstudio-header-contant-list-link-phone-contant-email {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-    }
-
-    .webstudio-header-contant-list-link-phone:is(:hover, :focus) {
-        color: var(--Primary-Brand);
-    }
-
     /* social media icons menu */
+
+    .webstudio-header-social-media-phone {
+        display: block;
+    }
 
     .webstudio-header-social-media-container {
         width: 328px;
+        height: 40px;
         display: flex;
         list-style: none;
         margin-top: 48px;
+        margin-left: 40px;
     }
 
     .webstudio-header-social-media-list {
@@ -198,11 +201,12 @@ screen and (min-resolution: 2dppx) and (max-width: 480px) {
         border-radius: 50%;
         display: flex;
         align-items: center;
-        margin-left: 40px;
-        padding-left: 13px;
+        padding: 8px;
+        margin-left: 56px;
     }
 
     .webstudio-header-social-media-icon {
+        width: 24px;
         height: 24px;
     }
 
@@ -229,12 +233,6 @@ screen and (min-resolution: 2dppx) and (max-width: 480px) {
             background-size: cover;
     }
 
-    .webstudio-modal-window {
-        position: absolute;
-        top: 30%;
-        left: 21%;
-    }
-
     .webstudio-service-button {
         font-weight: 500;
         font-size: 16px;
@@ -243,10 +241,30 @@ screen and (min-resolution: 2dppx) and (max-width: 480px) {
 
     /* modal */
 
-    /* .webstudio-modal-window {
+    .webstudio-modal-window {
         width: 392px;
         height: 586px;
-    } */
+        padding: 72px 16px;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    .webstudio-modal-form-input {
+        width: 360px;
+        height: 40px;
+    }
+
+    .webstudio-modal-form-data {
+        width: 360px;
+        height: 338px;
+    }
+
+    .webstudio-modal-window-close-button:is(:hover, :focus) {
+        background: var(--Primary-Brand);
+        fill: var(--Accent);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     /* services */
 
@@ -393,6 +411,26 @@ screen and (min-resolution: 2dppx) and (max-width: 480px) {
         cursor: pointer;
     }
 
+    /* filter button page portfolio */
+
+    .webstudio-filter-buttons {
+        width: 263px;
+        height: 96px;
+        display: flex;
+        margin-top: 48px;
+    }
+
+    .webstudio-services-style-buttons-items:nth-child(1),
+    .webstudio-services-style-buttons-items:nth-child(2),
+    .webstudio-services-style-buttons-items:nth-child(3) {
+        width: 263px;
+        display: flex;
+        height: 40px;
+    }
+
+    /* .webstudio-services-style-buttons-items:nth-child(5) {
+        margin-top: 40px;
+    } */
 
     /* Footer */
 

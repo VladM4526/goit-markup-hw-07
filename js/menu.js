@@ -1,9 +1,9 @@
 // menu
 
 (() => {
-  const mobileMenu = document.querySelector('.webstudio-header-responsive-menu-list');
-  const openMenuBtn = document.querySelector('.webstudio-header-responsive-icon');
-  const closeMenuBtn = document.querySelector('.webstudio-modal-window-close-button-phone');
+  const mobileMenu = document.querySelector('.webstudio-header-menu-modal');
+  const openMenuBtn = document.querySelector('.webstudio-header-responsive-menu-logo-icon');
+  const closeMenuBtn = document.querySelector('.webstudio-modal-menu-close-button');
 
   const toggleMenu = () => {
     const isMenuOpen =

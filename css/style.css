@@ -129,23 +129,27 @@
 
 /* pesponsive menu */
 
-.webstudio-header-responsive-menu-container {
+.webstudio-modal-menu-close-button {
     display: none;
 }
 
-.webstudio-header-responsive-icon {
+.webstudio-nav-logo-menu {
+    display: none;
+}
+
+.webstudio-header-social-media-phone {
+    display: none;
+}
+
+.webstudio-nav-menu-mobile {
+    display: none;
+}
+
+.webstudio-header-responsive-menu-logo-icon {
     display: none;
 }
 
 .webstudio-modal-window-close-button-phone {
-    display: none;
-}
-
-.webstudio-header-responsive-menu-list {
-    display: none;
-}
-
-.webstudio-header-responsive-contact-phone {
     display: none;
 }
 
