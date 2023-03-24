@@ -24,7 +24,7 @@
     --input-footer-rgba: rgba(255, 255, 255, 0.3);
     --input-footer-color-input: rgba(255, 255, 255, 0.6);
     --input-modal-form-border: rgba(33, 33, 33, 0.2);
-    --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);;
+    --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);
 }
 
 
@@ -41,6 +41,10 @@
 
 .webstudio-header {
     padding: 25px 0;
+}
+
+.webstudio-header-responsive-menu-logo-icon {
+    display: none;
 }
 
 .webstudio-header-portfolio {
@@ -123,6 +127,30 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* pesponsive menu */
+
+.webstudio-header-responsive-menu-container {
+    display: none;
+}
+
+.webstudio-header-responsive-icon {
+    display: none;
+}
+
+.webstudio-modal-window-close-button-phone {
+    display: none;
+}
+
+.webstudio-header-responsive-menu-list {
+    display: none;
+}
+
+.webstudio-header-responsive-contact-phone {
+    display: none;
+}
+
+/* pesponsive menu */
+
 .webstudio-header-contant-list-item:last-child {
     margin-right: 0px;
 }
@@ -204,6 +232,10 @@
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+}
+
+.webstudio-service-phone {
+    display: none;
 }
 
 .webstudio-service-button {
@@ -463,6 +495,10 @@
 
 /*Services*/
 
+.webstudio-services-phone {
+    display: none;
+}
+
 .webstudio-services {
     margin-top: 120px;
 }
@@ -560,6 +596,10 @@
 }
 
 /*Our team*/
+
+.webstudio-our-team-title-phone {
+    display: none;
+}
 
 .webstudio-our-team {
     background: var(--Light);
@@ -984,7 +1024,6 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--White);
-    display: flex;
 }
 
 .webstudio-footer-form-subscribe-input-button-container {

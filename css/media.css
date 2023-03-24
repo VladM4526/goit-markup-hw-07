@@ -1,5 +1,459 @@
-@media screen and (max-width: 480px)
-    and (min-device-pixel-ratio: 1)
-    and (min-device-pixel-ratio: 2) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 480px),
+screen and (min-resolution: 192dpi) and (max-width: 480px),
+screen and (min-resolution: 2dppx) and (max-width: 480px) {
+
+    :root {
+            --Primary-Brand: #4D5AE5;
+            --Primary-Brand-rgba: rgba(77, 90, 229, 0.9);
+            --Pressed-state: #404BBF;
+            --modal-overlay: rgba(46, 47, 66, 0.4);
+            --Dark: #2E2F42;
+            --Text: #434455;
+            --Light: #F4F4FD;
+            --White: #FFFFFF;
+            --Accent: #E7E9FC;
+            --Cloud: #F4F4FD;
+            --Subtle-Text: #8E8F99;
+            --Success: #31D0AA;
+            --border-button: rgba(0, 0, 0, 0.1);
+            --input-footer-rgba: rgba(255, 255, 255, 0.3);
+            --input-footer-color-input: rgba(255, 255, 255, 0.6);
+            --input-modal-form-border: rgba(33, 33, 33, 0.2);
+            --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);
+        }
+
+        /* menu section */
+
+    .webstudio-header-menu-list,
+    .webstudio-header-contant {
+        display: none;
+    }
+
+    .webstudio-modal-window-close-button-phone {
+        display: block;
+        background: var(--Accent);
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid var(--border-button);
+        position: absolute;
+        left: 425px;
+        top: 24px;
+        cursor: pointer;
+        transition: 0.25s linear;
+    }
+    
+    .webstudio-modal-window-close-button-phone:is(:hover, :focus) {
+        background: var(--Primary-Brand);
+        fill: var(--Accent);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .webstudio-header {
+        width: 428px;
+    }
+
+    .webstudio-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .webstudio-nav-logo {
+        width: 115px;
+        height: 22px;
+        margin-right: 16px;
+    }
+
+    .webstudio-header-responsive-menu-container {
+        display: block;
+    }
+
+    .webstudio-header-container {
+        width: 428px;
+    }
+
+    .webstudio-header-responsive-menu-logo-icon {
+        display: block;
+    }
+    
+    .webstudio-header-responsive-icon {
+        display: block;
+        position: relative;
+        left: 289px;
+        width: 32px;
+        height: 32px;
+        fill: var(--Dark);
+    }
+
+    .webstudio-header-responsive-menu-list {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: var(--White);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 80px 40px;
+    }
+
+    .webstudio-header-responsive-menu-container {
+        width: 100%;
+        height: 796px;
+    }
+
+    .webstudio-header-menu-list-phone {
+        list-style: none;
+    }
+
+    .webstudio-header-menu-responsive-link {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: var(--Dark);
+    }
+
+    .webstudio-header-menu-responsive-link:is(:hover, :focus) {
+        color: var(--Pressed-state);
+    }
+
+    .webstudio-header-menu-phone-item {
+        margin-top: 40px;
+    }
+
+    .webstudio-header-menu-phone-item:first-child {
+        margin-top: 0px;
+    }
+
+    .is-open {
+        display: block;
+    }
+
+    /* contant section menu */
+
+    .webstudio-header-contant-phone {
+        display: block;
+        height: 104px;
+    }
+
+    .webstudio-header-contant-list-phone {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .webstudio-header-contant-list-link-phone {
+        text-decoration: none;
+        color: var(--Text);
+    }
+
+    .webstudio-header-contant-list-item-phone {
+        margin-top: 40px;
+    }
+
+    .webstudio-header-contant-list-item-phone:first-child {
+        margin-top: 0px;
+    }
+
+    .webstudio-header-contant-phone-container {
+        margin-top: 284px;
+    }
+
+    .webstudio-header-contant-list-link-phone-contant-phone {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.1;
+        text-transform: capitalize;
+    }
+
+    .webstudio-header-contant-list-link-phone-contant-email {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    }
+
+    .webstudio-header-contant-list-link-phone:is(:hover, :focus) {
+        color: var(--Primary-Brand);
+    }
+
+    /* social media icons menu */
+
+    .webstudio-header-social-media-container {
+        width: 328px;
+        display: flex;
+        list-style: none;
+        margin-top: 48px;
+    }
+
+    .webstudio-header-social-media-list {
+        width: 40px;
+        height: 40px;
+        background: var(--Pressed-state);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        padding-left: 13px;
+    }
+
+    .webstudio-header-social-media-icon {
+        height: 24px;
+    }
+
+    .webstudio-header-social-media-list:first-child {
+        margin-left: 0px;
+    }
+
+    /* Effective Solutions for Your Business */
+
+    .webstudio-service-text {
+        width: 320px;
+        height: 80px;
+        font-size: 36px;
+        line-height: 1.1;
+    }
+
+    .webstudio-service {
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), 
+            url(../images/Dark-bg-phone-edited.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+
+    .webstudio-modal-window {
+        position: absolute;
+        top: 30%;
+        left: 21%;
+    }
+
+    .webstudio-service-button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* modal */
+
+    /* .webstudio-modal-window {
+        width: 392px;
+        height: 586px;
+    } */
+
+    /* services */
+
+    .webstudio-services-item-svg {
+        display: none;
+    }
+
+    .webstudio-services-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+
+    .webstudio-services-container {
+        width: 396px;
+    }
+
+    .webstudio-services-title-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .webstudio-services-text-list {
+        width: 396px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .webstudio-services-text-item {
+        margin-top: 72px;
+    }
+
+    .webstudio-services-text-item:first-child {
+        margin-top: 0px;
+    }
+
+    .webstudio-services-text-item:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .webstudio-services-text-item:nth-child(3) {
+        margin-left: 0px;
+    }
+
+    .webstudio-services-text-item:nth-child(4) {
+        margin-left: 0px;
+    }
+
+    /* our team */
+
+    .webstudio-our-team {
+        width: 100%;
+        height: 2264px;
+        margin-top: 96px;
+    }
+
+    .webstudio-our-team-container {
+        width: 428px;
+    }
+
+    .webstudio-our-team-cards {
+        width: 264px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 82px;
+    }
+
+    .webstudio-our-team-cards-employee {
+        margin-top: 72px;
+        margin-left: 0px;
+    }
+
+    .webstudio-our-team-cards-employee:first-child {
+        margin-top: 0px;
+    }
+
+    .webstudio-our-team-title {
+        position: relative;
+        left: 133px;
+        width: 162px;
+        height: 40px;
+    }
+    
+    /* our jobs */
+    
+    .webstudio-our-jobs {
+        display: none;
+    }
+
+    /* customers */
+
+    .webstudio-our-customers {
+        margin-bottom: 96px;
+    }
+
+    .webstudio-our-customers-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .webstudio-our-customers-list-item {
+        width: 190px;
+        height: 88px;
+        margin-left: 16px;
+    }
+
+    .webstudio-our-customers-list-item:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    .webstudio-our-customers-list-item:nth-child(3) {
+        margin-top: 72px;
+        margin-left: 0px;
+    }
+    
+    .webstudio-our-customers-list-item:nth-child(4) {
+        margin-top: 72px;
+        margin-left: 16px;
+    }
+
+    .webstudio-our-customers-list-item:nth-child(5) {
+        margin-left: 0px;
+        margin-top: 72px;
+    }
+
+    .webstudio-our-customers-list-item:nth-child(6) {
+        margin-left: 16px;
+        margin-top: 72px;
+    }
+
+    .webstudio-our-customers-list-item:is(:hover, :focus) .webstudio-our-customers-list-item-icon {
+        fill: var(--Pressed-state);
+        cursor: pointer;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .webstudio-our-customers-list-item:hover {
+        border: 1px solid var(--Pressed-state);
+        cursor: pointer;
+    }
+
+
+    /* Footer */
+
+    .webstudio-footer-home {
+        width: 100%;
+        height: 662px;
+    }
+
+    .webstudio-footer-home-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .webstudio-footer-container-text {
+        width: 268px;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .webstudio-footer-social-media-container {
+        width: 208px;
+        height: 80px;
+        margin-left: 0px;
+        margin-top: 72px;
+        text-align: center;
+    }
+
+    .webstudio-footer-form-subscribe-form {
+        width: 398px;
+    }
+
+    .webstudio-footer-form-subscribe-container {
+        width: 398px;
+        height: 136px;
+        margin-left: 0px;
+        margin-top: 72px;
+        text-align: center;
+    }
+
+    .webstudio-footer-form-subscribe-label {
+        text-align: center;
+    }
+
+    .webstudio-footer-form-subscribe-input-button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .webstudio-footer-form-subscribe-input {
+        width: 398px;
+        height: 40px;
+    }
+
+    .webstudio-footer-form-subscribe-button {
+        width: 165px;
+        height: 40px;
+        margin-left: 0px;
+    }
     
 }

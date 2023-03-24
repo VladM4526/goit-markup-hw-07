@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
     <title>WebStudio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" type="text/html">
 </head>
 <body>
@@ -15,6 +16,11 @@
         <div class="webstudio-header-container">
             <nav class="webstudio-nav">
                 <a class="webstudio-nav-logo" href="./index.html"><span class="webstudio-nav-link-color">WEB</span>STUDIO</a>
+                    <div class="webstudio-header-responsive-menu-logo-icon">
+                        <svg class="webstudio-header-responsive-icon is-open">
+                            <use href="./images/menu-burger.svg#icon-menu_black_24dp"></use>
+                        </svg>
+                    </div>
                 <ul class="webstudio-header-menu-list">
                     <li class="webstudio-header-menu-item"><a class="webstudio-header-menu-link webstudio-header-menu-link-active" href="./index.html">Studio</a></li>
                     <li class="webstudio-header-menu-item"><a class="webstudio-header-menu-link" href="./portfolio.html">Portfolio</a></li>
@@ -31,6 +37,64 @@
                     </ul>
                 </address>
             </nav>
+        </div>
+        <div class="webstudio-header-responsive-menu-list">
+            <div class="webstudio-header-responsive-menu-container">
+                <button class="webstudio-modal-window-close-button-phone">
+                    <svg class="webstudio-modal-window-icon">
+                        <use href="./images/close-button-svg.svg#icon-close-button" width="8"></use>
+                    </svg>
+                </button>
+                <ul class="webstudio-header-menu-list-phone">
+                    <li class="webstudio-header-menu-phone-item"><a class="webstudio-header-menu-responsive-link" href="./index.html">Studio</a></li>
+                    <li class="webstudio-header-menu-phone-item"><a class="webstudio-header-menu-responsive-link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="webstudio-header-menu-phone-item"><a class="webstudio-header-menu-responsive-link" href="">Contacts</a></li>
+                </ul>
+                <div class="webstudio-header-contant-phone-container">
+                    <address class="webstudio-header-contant-phone">
+                        <ul class="webstudio-header-contant-list-phone">
+                            <li class="webstudio-header-contant-list-item-phone">
+                                <a class="webstudio-header-contant-list-link-phone webstudio-header-contant-list-link-phone-contant-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            </li>
+                            <li class="webstudio-header-contant-list-item-phone webstudio-header-contant-list-link-phone-contant-email">
+                                <a class="webstudio-header-contant-list-link-phone" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="webstudio-header-social-media-phone">
+                    <ul class="webstudio-header-social-media-container">
+                        <li class="webstudio-header-social-media-list">
+                            <a href="">
+                                <svg class="webstudio-header-social-media-icon" width="24">
+                                    <use href="./images/symbol-defs-(social).svg#icon-instagram-2" width="16"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="webstudio-header-social-media-list">
+                            <a href="">
+                                <svg class="webstudio-header-social-media-icon">
+                                    <use href="./images/symbol-defs-(social).svg#icon-twitter-1" width="16"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="webstudio-header-social-media-list">
+                            <a href="">
+                                <svg class="webstudio-header-social-media-icon">
+                                    <use href="./images/symbol-defs-(social).svg#icon-facebook-1" width="16"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="webstudio-header-social-media-list">
+                            <a href="">
+                                <svg class="webstudio-header-social-media-icon">
+                                    <use href="./images/symbol-defs-(social).svg#icon-linkedin-1-white" width="16"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -158,156 +222,160 @@
             <section class="webstudio-our-team">
                 <div class="webstudio-our-team-container">
                     <h2 class="webstudio-our-team-title">Our Team</h2>
-                        <ul class="webstudio-our-team-cards">
-                            <li class="webstudio-our-team-cards-employee">
-                                <img src="./images/Mark-Guerrero-3.jpg" alt="Mark-Guerrero" width="264">
-                                <div class="webstudio-our-team-cards-employee-titles">
-                                    <h3 class="webstudio-our-team-cards-title-list">Mark Guerrero</h3>
-                                    <p class="webstudio-our-team-cards-text-list">Product Designer</p>
-                                    <ul class="webstudio-our-team-cards-employee-social-media-container">
-                                        <li class="webstudio-our-team-cards-employee-social-media-list">
-                                            <a href="">
-                                                <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                    <use href="./images/symbol-defs-(social).svg#icon-instagram-2" width="16"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="webstudio-our-team-cards-employee-social-media-list">
-                                            <a href="">
-                                                <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                    <use href="./images/symbol-defs-(social).svg#icon-twitter-1" width="16"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="webstudio-our-team-cards-employee-social-media-list">
-                                            <a href="">
-                                                <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                    <use href="./images/symbol-defs-(social).svg#icon-facebook-1" width="16"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="webstudio-our-team-cards-employee-social-media-list">
-                                            <a href="">
-                                                <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                    <use href="./images/symbol-defs-(social).svg#icon-linkedin-1-white" width="16"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="webstudio-our-team-cards-employee">
-                                <img src="./images/tom-ford-4.jpg" alt="Tom-Ford" width="264">
-                                <div class="webstudio-our-team-cards-employee-titles">
-                                    <h3 class="webstudio-our-team-cards-title-list">Tom Ford</h3>
-                                    <p class="webstudio-our-team-cards-text-list">Frontend Developer</p>
-                                        <ul class="webstudio-our-team-cards-employee-social-media-container">
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-instagram-2" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-twitter-1" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-facebook-1" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-linkedin-1-white" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                </div>
-                            </li>
-                            <li class="webstudio-our-team-cards-employee">
-                                <img src="./images/Camila-Garcia-2.jpg" alt="Camila-Garcia" width="264">
-                                <div class="webstudio-our-team-cards-employee-titles">
-                                    <h3 class="webstudio-our-team-cards-title-list">Camila Garcia</h3>
-                                    <p class="webstudio-our-team-cards-text-list">Marketing</p>
-                                        <ul class="webstudio-our-team-cards-employee-social-media-container">
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-instagram-2" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-twitter-1" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-facebook-1" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-linkedin-1-white" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                </div>
-                            </li>
-                            <li class="webstudio-our-team-cards-employee">
-                                <img src="./images/Daniel-Wilson-1.jpg" alt="Daniel-Wilson" width="264">
-                                <div class="webstudio-our-team-cards-employee-titles">
-                                    <h3 class="webstudio-our-team-cards-title-list">Daniel Wilson</h3>
-                                    <p class="webstudio-our-team-cards-text-list">UI Designer</p>
-                                        <ul class="webstudio-our-team-cards-employee-social-media-container">
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-instagram-2" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-twitter-1" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-facebook-1" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li class="webstudio-our-team-cards-employee-social-media-list">
-                                                <a href="">
-                                                    <svg class="webstudio-our-team-cards-employee-social-media-icon">
-                                                        <use href="./images/symbol-defs-(social).svg#icon-linkedin-1-white" width="16"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                </div>
-                             </li>
-                        </ul>
+                    <ul class="webstudio-our-team-cards">
+                        <li class="webstudio-our-team-cards-employee">
+                            <img src="./images/Mark-Guerrero-3.jpg" alt="Mark-Guerrero" width="264">
+                            <div class="webstudio-our-team-cards-employee-titles">
+                                <h3 class="webstudio-our-team-cards-title-list">Mark Guerrero</h3>
+                                <p class="webstudio-our-team-cards-text-list">Product Designer</p>
+                                <ul class="webstudio-our-team-cards-employee-social-media-container">
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-instagram-2" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-twitter-1" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-facebook-1" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-linkedin-1-white" width="16">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="webstudio-our-team-cards-employee">
+                            <img src="./images/tom-ford-4.jpg" alt="Tom-Ford" width="264">
+                            <div class="webstudio-our-team-cards-employee-titles">
+                                <h3 class="webstudio-our-team-cards-title-list">Tom Ford</h3>
+                                <p class="webstudio-our-team-cards-text-list">Frontend Developer</p>
+                                <ul class="webstudio-our-team-cards-employee-social-media-container">
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-instagram-2" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-twitter-1" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-facebook-1" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-linkedin-1-white" width="16">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="webstudio-our-team-cards-employee">
+                            <img src="./images/Camila-Garcia-2.jpg" alt="Camila-Garcia" width="264">
+                            <div class="webstudio-our-team-cards-employee-titles">
+                                <h3 class="webstudio-our-team-cards-title-list">Camila Garcia</h3>
+                                <p class="webstudio-our-team-cards-text-list">Marketing</p>
+                                <ul class="webstudio-our-team-cards-employee-social-media-container">
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-instagram-2" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-twitter-1" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-facebook-1" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-linkedin-1-white" width="16">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="webstudio-our-team-cards-employee">
+                            <img src="./images/Daniel-Wilson-1.jpg" alt="Daniel-Wilson" width="264">
+                            <div class="webstudio-our-team-cards-employee-titles">
+                                <h3 class="webstudio-our-team-cards-title-list">Daniel Wilson</h3>
+                                <p class="webstudio-our-team-cards-text-list">UI Designer</p>
+                                <ul class="webstudio-our-team-cards-employee-social-media-container">
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-instagram-2" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-twitter-1" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-facebook-1" width="16"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="webstudio-our-team-cards-employee-social-media-list">
+                                        <a href="">
+                                            <svg class="webstudio-our-team-cards-employee-social-media-icon">
+                                                <use href="./images/symbol-defs-(social).svg#icon-linkedin-1-white" width="16">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="webstudio-our-customers">
@@ -416,6 +484,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
