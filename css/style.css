@@ -65,6 +65,15 @@
     text-decoration: none;
 }
 
+.webstudio-nav-logo-menu {
+    color: var(--Dark);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-decoration: none;
+}
+
 .webstudio-nav-link-color {
     color: var(--Primary-Brand);
     font-family: 'Raleway';
@@ -130,10 +139,6 @@
 /* pesponsive menu */
 
 .webstudio-modal-menu-close-button {
-    display: none;
-}
-
-.webstudio-nav-logo-menu {
     display: none;
 }
 
@@ -496,7 +501,6 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 /*Services*/
 
 .webstudio-services-phone {
@@ -776,7 +780,7 @@
     margin-top: 96px;
 }
 
-.webstudio-services-style-buttons-items {
+.webstudio-services-style-buttons {
     margin-left: 24px;
 }
 
@@ -802,7 +806,7 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.webstudio-services-style-buttons-items:first-child {
+.webstudio-services-style-buttons:first-child {
     margin-left: 0px;
 }
 
