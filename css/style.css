@@ -519,6 +519,10 @@
     margin-right: auto;
 }
 
+.webstudio-services-container-phone {
+    display: none;
+}
+
 .webstudio-services-text-list {
     display: flex;
 }
@@ -604,6 +608,10 @@
 }
 
 /*Our team*/
+
+.webstudio-our-team-phone {
+    display: none;
+}
 
 .webstudio-our-team-title-phone {
     display: none;
