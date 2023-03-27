@@ -1,7 +1,7 @@
 // menu
 
 (() => {
-  const mobileMenu = document.querySelector('.webstudio-header-menu-modal');
+  const mobileMenu = document.querySelector('.webstudio-header-container');
   const openMenuBtn = document.querySelector('.webstudio-header-responsive-menu-logo-icon');
   const closeMenuBtn = document.querySelector('.webstudio-modal-menu-close-button');
 

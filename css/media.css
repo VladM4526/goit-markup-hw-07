@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media only screen and (min-width: 480px) {
     :root {
             --Primary-Brand: #4D5AE5;
             --Primary-Brand-rgba: rgba(77, 90, 229, 0.9);
@@ -17,507 +17,115 @@
             --input-footer-color-input: rgba(255, 255, 255, 0.6);
             --input-modal-form-border: rgba(33, 33, 33, 0.2);
             --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);
+            --button-menu-mobile: #000000;
         }
-
 
     /* menu section */
 
-    .webstudio-header-menu-list {
-        margin-left: 0px;
-    }
-
-    .webstudio-nav-logo {
-        display: none;
-    }
-
-    .webstudio-header-contant {
-        display: none;
-    }
-
-    .webstudio-nav-logo {
-        display: block;
-        margin-left: 16px;
-    }
-
-    .webstudio-nav-logo-menu {
-        display: none;
-    }
-
-    .webstudio-modal-menu-close-button {
-        display: block;
-        background: var(--Accent);
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        border: 1px solid var(--border-button);
-        position: absolute;
-        left: 380px;
-        top: 24px;
-        cursor: pointer;
-        transition: 0.25s linear;
-    }
-    
-    .webstudio-modal-menu-close-button:is(:hover, :focus) {
-        background: var(--Primary-Brand);
-        fill: var(--Accent);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .webstudio-header-menu-modal {
-        display: none;
-        width: 100%;
-        height: 100%;
-        background: var(--Light);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-
-    .webstudio-header-container {
-        width: 428px;
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .webstudio-nav-menu-mobile {
-        width: 396px;
-        height: 22px;
-        display: flex;
-        align-items: center;
-    }
-
-    .webstudio-nav {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .webstudio-nav-logo-menu {
-        width: 115px;
-        height: 22px;
-        margin-right: 16px;
-    }
-
-    .webstudio-header-menu-list-phone {
-        display: block;
-        width: 151px;
-        height: 200px;
-        margin-left: 40px;
-        margin-top: 80px;
-    }
-
-    .webstudio-header-menu-link {
-        display: inline;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-    }
-
-    .webstudio-header-menu-item {
-        margin-top: 40px;
-    }
-
-    .webstudio-header-menu-item:first-child {
-        margin-top: 0px;
-    }
-
-    .webstudio-header-menu-item:nth-child(2) {
-        margin-left: 0px;
-    }
-
-    .webstudio-header-menu-item:nth-child(3) {
-        margin-left: 0px;
-    }
-
-    .webstudio-header-menu-link-active::after {
-        display: none;
-    }
-
-    .webstudio-header-menu-list {
-        margin-left: 0px;
-    }
-
-    /* contant section menu */
-
-    .webstudio-header-contant {
-        width: 337px;
-        height: 104px;
-        display: block;
-        margin-top: 284px;
-    }
-
-    .webstudio-header-contant-list {
-        display: flex;
-        flex-direction: column-reverse;
-        position: absolute;
-        left: 40px;
-    }
-
-    .webstudio-header-contant-list-item {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        margin-bottom: 40px;
-    }
-
-    .webstudio-header-contant .webstudio-header-contant-list-link-phone {
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 1.1;
-        text-transform: capitalize;
-    }
-    
-    .webstudio-header-responsive-icon {
-        display: block;
-        position: relative;
-        top: 0;
-        left: 289px;
-        width: 32px;
-        height: 32px;
-        fill: var(--Dark);
-    }
-
-    .is-open {
-        display: block;
-    }
-
-    /* social media icons menu */
-
-    .webstudio-header-social-media-phone {
-        display: block;
-    }
-
-    .webstudio-header-social-media-container {
-        width: 328px;
-        height: 40px;
-        display: flex;
-        list-style: none;
-        margin-top: 125px;
-        margin-left: 40px;
-    }
-
-    .webstudio-header-social-media-list {
-        width: 40px;
-        height: 40px;
-        background: var(--Pressed-state);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        padding: 8px;
-        margin-left: 56px;
-    }
-
-    .webstudio-header-social-media-icon {
-        width: 24px;
-        height: 24px;
-    }
-
-    .webstudio-header-social-media-list:first-child {
-        margin-left: 0px;
-    }
-
-    /* modal */
-
-    .webstudio-modal-window {
-        width: 392px;
-        height: 586px;
-        padding: 72px 16px;
-        position: absolute;
-        top: 30%;
-        left: 30%;
-    }
-
-    .webstudio-modal-form-input {
-        width: 360px;
-        height: 40px;
-    }
-
-    .webstudio-modal-form-data {
-        width: 360px;
-        height: 338px;
-    }
-
-    .webstudio-modal-window-close-button:is(:hover, :focus) {
-        background: var(--Primary-Brand);
-        fill: var(--Accent);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    /* services */
-
-    .webstudio-services-item-svg {
-        display: none;
-    }
-
-    .webstudio-services-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-    }
-    
-    /* mobile style */
-
-    .webstudio-services-container {
-        display: block;
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 16px;
-    }
-
-    .webstudio-services-text-list {
-        margin-bottom: 96px;
-    }
-
-    .webstudio-services-text-list-phone {
-        margin-bottom: 96px;
-    }
-
-    .webstudio-services-text-list {
-        width: 396px;
-        height: 624px;
-        list-style: none;
-    }
-
-    .webstudio-services-text-item {
-        width: 396px;
-        height: 96px;
-        margin-top: 72px;
-    }
-
-    .webstudio-services-text-item:first-child {
-        margin-top: 0px;
-    }
-
-    .webstudio-services-text-item:nth-child(2) {
-        margin-right: 24px;
-    }
-
-    .webstudio-services-title-text {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-
-    .webstudio-services-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        margin-bottom: 8px;
-    }
-
-    .webstudio-services-text-item:nth-child(2) {
-        margin-left: 0px;
-    }
-
-    .webstudio-services-text-item:nth-child(3) {
-        margin-top: 72px;
-    }
-
-    .webstudio-services-text-item:nth-child(4) {
-        margin-left: 0px;
-    }
-    
-    /* mobile style */
-
-    .webstudio-services-title-text {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-
-    .webstudio-services-text-list {
-        width: 396px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .webstudio-services-text-item {
-        margin-top: 72px;
-    }
-
-    /* our team */
-
-    .webstudio-our-team {
-        display: none;
-    }
-
-    .webstudio-our-team-phone {
-        display: block;
-    }
-
-    .webstudio-our-team-container-phone {
-        width: 428px;
-        height: 2264px;
-        background: var(--Light);
-    }
-
-    .webstudio-our-team-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .webstudio-our-team-cards-employee:nth-child(1) {
-        margin-left: 82px;
-    }
-
-    .webstudio-our-team-cards-employee:nth-child(2) {
-        margin-left: 82px;
-        margin-top: 72px;
-    }
-
-    .webstudio-our-team-cards-employee:nth-child(3) {
-        margin-left: 82px;
-        margin-top: 72px;
-    }
-
-    .webstudio-our-team-cards-employee:nth-child(4) {
-        margin-left: 82px;
-        margin-top: 72px;
-    }
-
-    .webstudio-our-team-title-phone {
-    }
-
-    
-    /* our jobs */
-    
-    .webstudio-our-jobs {
-        display: none;
-    }
-
-    /* customers */
-
-    .webstudio-our-customers {
-        margin-bottom: 96px;
-    }
-
-    .webstudio-our-customers-list {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .webstudio-our-customers-list-item {
-        width: 190px;
-        height: 88px;
-        margin-left: 16px;
-    }
-
-    .webstudio-our-customers-list-item:nth-child(1) {
-        margin-top: 0px;
-    }
-
-    .webstudio-our-customers-list-item:nth-child(3) {
-        margin-top: 72px;
-        margin-left: 0px;
-    }
-    
-    .webstudio-our-customers-list-item:nth-child(4) {
-        margin-top: 72px;
-        margin-left: 16px;
-    }
-
-    .webstudio-our-customers-list-item:nth-child(5) {
-        margin-left: 0px;
-        margin-top: 72px;
-    }
-
-    .webstudio-our-customers-list-item:nth-child(6) {
-        margin-left: 16px;
-        margin-top: 72px;
-    }
-
-    .webstudio-our-customers-list-item:is(:hover, :focus) .webstudio-our-customers-list-item-icon {
-        fill: var(--Pressed-state);
-        cursor: pointer;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .webstudio-our-customers-list-item:hover {
-        border: 1px solid var(--Pressed-state);
-        cursor: pointer;
-    }
-
-    /* Footer */
-
-    .webstudio-footer-home {
-        width: 100%;
-        height: 662px;
-    }
-
-    .webstudio-footer-home-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .webstudio-footer-container-text {
-        width: 268px;
-        height: 110px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .webstudio-footer-social-media-container {
-        width: 208px;
-        height: 80px;
-        margin-left: 0px;
-        margin-top: 72px;
-        text-align: center;
-    }
-
-    .webstudio-footer-form-subscribe-form {
-        width: 398px;
-    }
-
-    .webstudio-footer-form-subscribe-container {
-        width: 398px;
-        height: 136px;
-        margin-left: 0px;
-        margin-top: 72px;
-        text-align: center;
-    }
-
-    .webstudio-footer-form-subscribe-label {
-        text-align: center;
-    }
-
-    .webstudio-footer-form-subscribe-input-button-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .webstudio-footer-form-subscribe-input {
-        width: 398px;
-        height: 40px;
-    }
-
-    .webstudio-footer-form-subscribe-button {
-        width: 165px;
-        height: 40px;
-        margin-left: 0px;
-    }
+        .webstudio-nav-logo-menu,
+        .webstudio-header-menu-list,
+        .webstudio-header-contant {
+            display: none;
+        }
+
+        .webstudio-nav-menu-mobile {
+            display: block;
+        }
+
+        .webstudio-nav-menu-mobile-container {
+            height: 22px;
+            display: flex;
+            align-items: center;
+        }
+
+        .webstudio-header {
+            width: 428px;
+            height: 70px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .webstudio-nav {
+            width: 428px;
+            height: 796px;
+        }
+
+        .webstudio-header-responsive-menu-logo-icon {
+            display: block;
+            width: 32px;
+            height: 22px;
+            background: transparent;
+            border: none;
+            outline: none;
+            position: relative;
+            left: 249px;
+            top: 0;
+            bottom: 0;
+        }
+
+        .webstudio-header-responsive-icon {
+            width: 32px;
+            height: 22px;
+        }
+
+        .webstudio-header-container {
+            display: none;
+            width: 100%;
+            height: 100%;
+            background: var(--White);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .webstudio-modal-menu-close-button {
+            display: block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 380px;
+            top: 24px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            background: var(--Accent);
+        }
+
+        .webstudio-modal-window-icon {
+            fill: var(--button-menu-mobile);
+        }
+
+        .is-open {
+            display: block;
+        }
+
+        /* Effective Solutions for Your Business */
+
+        .webstudio-service {
+            width: 428px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .webstudio-service-text {
+            width: 320px;
+            height: 80px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.1;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+        }
 
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 480px),
-screen and (min-resolution: 192dpi) and (max-width: 480px),
-screen and (min-resolution: 2dppx) and (max-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
 
     :root {
             --Primary-Brand: #4D5AE5;
@@ -539,42 +147,23 @@ screen and (min-resolution: 2dppx) and (max-width: 480px) {
             --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);
         }
 
-        
-
-    /* Effective Solutions for Your Business */
-
     .webstudio-service {
-        width: 428px;
+        padding: 112px 54px;
         height: 432px;
-    }
-
-    .webstudio-service-text {
-        width: 320px;
-        font-size: 36px;
-        line-height: 1.1;
-    }
-
-    .webstudio-service-phone {
-        width: 428px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)), 
-            url(../images/Dark-bg-phone-edited.jpg);
+            url("../images/Dark-bg-phone-edited.jpg");
             background-repeat: no-repeat;
-            background-size: cover;
-    }
-
-    .webstudio-service-button {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
+            background-size: 428px;
+            background-position: center;
     }
     
 }
 
-@media screen and (min-device-pixel-ratio: 1) and (max-width: 768px),
-screen and (min-resolution: 96dpi) and (max-width: 768px),
-screen and (min-resolution: 1dppx) and (max-width: 768px) {
+/* @media screen and (min-device-pixel-ratio: 1) and (max-width: 768px),
+(min-resolution: 96dpi),
+(min-resolution: 1dppx) {
 
     :root {
             --Primary-Brand: #4D5AE5;
@@ -596,31 +185,19 @@ screen and (min-resolution: 1dppx) and (max-width: 768px) {
             --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);
         }
 
-    /* Effective Solutions for Your Business */
-
-    .webstudio-service-container {
-        width: 768px;
-    }
-
-    .webstudio-service {
-        width: 768px;
+     .webstudio-service {
+        height: 436px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)), 
-            url(../images/Dark-bg-tablet-edited.jpg);
+            url("../images/Dark-bg-tablet-edited.jpg");
             background-repeat: no-repeat;
-            background-size: cover;
-    }
+            background-size: 768px;
+    } 
 
-    .webstudio-service-button {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-    }
+} */
 
-}
-
-@media (max-width: 768px) {
+/* @media screen and (min-width: 768px) {
 
         :root {
             --Primary-Brand: #4D5AE5;
@@ -642,196 +219,5 @@ screen and (min-resolution: 1dppx) and (max-width: 768px) {
             --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);
         }
 
-    /* header */
-
-    .webstudio-header {
-        width: 768px;
-    }
-
-    .webstudio-header-menu-list-phone {
-        margin-left: 120px;
-    }
-
-    .webstudio-header-contant {
-        width: 118px;
-        height: 16px;
-        margin-left: 118px;
-    }
-
-    .webstudio-header-contant-list-item {
-        margin-top: 4px;
-    }
-
-    .webstudio-header-contant-list-item:first-child {
-        margin-top: 0px;
-    }
-
-    .webstudio-service-container {
-        width: 496px;
-        height: 120px;
-    }
-
-    .webstudio-service-text {
-        width: 496px;
-        height: 120px;
-        font-size: 56px;
-        line-height: 1.07;
-    }
-
-    /* modal */
-
-    .webstudio-modal-window {
-        width: 392px;
-        height: 586px;
-        padding: 72px 16px;
-        position: absolute;
-        top: 40%;
-        left: 30%;
-    }
-
-    .webstudio-modal-form-input {
-        width: 360px;
-        height: 40px;
-    }
-
-    .webstudio-modal-form-data {
-        width: 360px;
-        height: 338px;
-    }
-
-    .webstudio-modal-window-close-button:is(:hover, :focus) {
-        background: var(--Primary-Brand);
-        fill: var(--Accent);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    /* services */
-
-    .webstudio-services-container-phone {
-        display: block;
-    }
-
-    .webstudio-services-text-list {
-        display: none;
-    }
-
-    .webstudio-services {
-        margin-top: 96px;
-    }
-
-    .webstudio-services-item-svg {
-        display: none;
-    }
-
-    .webstudio-services-container {
-        display: none;
-    }
-
-    .webstudio-services-container-phone {
-        margin-left: 16px;
-    }
-
-    .webstudio-services-text-item {
-        width: 356px;
-    }
-
-    .webstudio-services-text-list-phone {
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-    }
-
-    .webstudio-services-title-phone {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-    }
-
-    .webstudio-services-title-text-phone {
-        width: 356px;
-        height: 72px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
     
-    .webstudio-services-text-item-phone:nth-child(2) {
-        margin-left: 24px;
-    }
-
-    .webstudio-services-text-item-phone:nth-child(3) {
-        margin-top: 72px;
-    }
-
-    .webstudio-services-text-item-phone:nth-child(4) {
-        margin-left: 24px;
-        margin-top: 72px;
-    }
-
-    .webstudio-services-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.1;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-    }
-
-    .webstudio-services-title-text {
-        width: 356px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-    }
-
-    /* what are you doing section */
-
-    .webstudio-our-jobs {
-        display: none;
-    }
-
-    /* our team */
-
-    .webstudio-our-team {
-        width: 768px;
-        height: 1232px;
-        margin-top: 96px;
-    }
-
-    .webstudio-our-team-title {
-        width: 162px;
-        height: 40px;
-        position: relative;
-        left: 316px;
-    }
-
-    .webstudio-our-team-cards {
-        width: 552px;
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 108px;
-    }
-
-    .webstudio-our-team-cards-employee:nth-child(2) {
-        margin-left: 24px;
-    }
-
-    .webstudio-our-team-cards-employee:nth-child(3) {
-        margin-top: 64px;
-        margin-left: 0px;
-    }
-
-    .webstudio-our-team-cards-employee:nth-child(4) {
-        margin-top: 64px;
-        margin-left: 24px;
-    }
-
-    /* filter services */
-
-    .webstudio-filter-portfolio-jobs-cards {
-        width: 736px;
-    }
-}
+} */
