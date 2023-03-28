@@ -1,7 +1,7 @@
 // menu
 
 (() => {
-  const mobileMenu = document.querySelector('.webstudio-header-container');
+  const mobileMenu = document.querySelector('.webstudio-nav');
   const openMenuBtn = document.querySelector('.webstudio-header-responsive-menu-logo-icon');
   const closeMenuBtn = document.querySelector('.webstudio-modal-menu-close-button');
 
@@ -21,7 +21,7 @@
   closeMenuBtn.addEventListener('click', toggleMenu);
 
   // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 480px)').addEventListener('change', e => {
+  window.matchMedia('(max-width: 480px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
