@@ -39,6 +39,7 @@
         }
 
         .webstudio-header {
+            width: 428px;
             margin-left: auto;
             margin-right: auto;
             padding-left: 16px;
@@ -229,6 +230,7 @@
         /* Effective Solutions for Your Business */
 
         .webstudio-service {
+            width: 428px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -257,19 +259,14 @@
             margin-top: 96px;
         }
 
-        .webstudio-services-container {
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 0;
-            padding-right: 0;
-        }
-
         .webstudio-services-text-list {
+            padding: 0px 16px;
             display: flex;
             flex-wrap: wrap;
         }
 
         .webstudio-services-title {
+            width: 396px;
             font-weight: 700;
             font-size: 36px;
             line-height: 1.1;
@@ -280,6 +277,7 @@
         }
 
         .webstudio-services-title-text {
+            width: 396px;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
@@ -327,7 +325,6 @@
 
         .webstudio-our-team-container {
             width: 428px;
-            height: 2264px;
         }
 
         .webstudio-our-team-cards {
@@ -551,6 +548,8 @@
             url("../images/Dark-bg-phone-edited.jpg");
             background-repeat: no-repeat;
             background-size: 428px;
+            margin-left: auto;
+            margin-right: auto;
     }
     
 }
@@ -580,12 +579,13 @@
         }
 
      .webstudio-service {
+        padding: 112px 136px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)), 
             url("../images/Dark-bg-tablet-edited.jpg");
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 768px;
             margin-left: auto;
             margin-right: auto;
     } 
