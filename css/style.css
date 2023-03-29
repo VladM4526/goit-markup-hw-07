@@ -745,6 +745,10 @@
 
 /*Filter portfolio jobs*/
 
+.webstudio-header-portfolio {
+    border-bottom: 1px solid var(--Accent);
+}
+
 .webstudio-filter-portfolio-jobs-container {
     width: 1158px;
     margin-left: auto;
