@@ -162,7 +162,7 @@
     margin-left: 40px;
 }
 
-.webstudio-header-contant a {
+.webstudio-header-contant .webstudio-header-contant-list-link {
     color: var(--Text);
     font-style: normal;
     font-weight: 400;
@@ -383,6 +383,7 @@
     height: 120px;
     border: none;
     outline: none;
+    resize: none;
     border: 1px solid var(--input-modal-form-border);
     border-radius: 4px;
     padding: 8px 16px;
