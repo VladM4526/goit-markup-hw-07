@@ -486,7 +486,8 @@
         /* footer */
 
         .webstudio-footer-home {
-            height: 662px;
+            padding-top: 96px;
+            padding-bottom: 96px;
         }
 
         .webstudio-footer-home-container {
@@ -544,6 +545,7 @@
         }
 
         .webstudio-footer-form-subscribe-input-button-container {
+            width: 398px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
