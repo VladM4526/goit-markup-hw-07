@@ -175,15 +175,14 @@
         .webstudio-header-contant-list-link-active {
             font-style: normal;
             font-weight: 600;
-            font-size: 36px;
+            font-size: 34px;
             line-height: 1.1;
-            letter-spacing: 0.04em;
+            text-transform: capitalize;
             text-decoration: none;
-            color: var(--Text);
+            color: var(--Primary-Brand);
         }
 
         .webstudio-header-contant-list-item:last-child {
-            width: 337px;
             margin-bottom: 40px;
         }
 
@@ -416,8 +415,16 @@
 
         /* filter services */
 
+        .webstudio-filter-portfolio-jobs-container {
+            width: 496px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
         .webstudio-filter-buttons {
-            margin-top: 48px;
+            width: 363px;
         }
 
         .webstudio-services-style-buttons-items:nth-child(2) {
@@ -430,8 +437,8 @@
 
         .webstudio-services-style-buttons-items:nth-child(4) {
             position: relative;
-            top: 64px;
-            left: -301px;
+            top: 17px;
+            left: -42px;
         }
 
         .webstudio-services-style-buttons-items:nth-child(5) {
@@ -442,7 +449,14 @@
 
         /* cards services */
 
+        .webstudio-filter-container-responsive {
+            width: 396px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
         .webstudio-filter-portfolio-jobs-cards {
+            width: 396px;
             display: flex;
             justify-content: center;
         }
@@ -818,6 +832,8 @@
 
         .webstudio-our-team-container {
             width: 552px;
+            padding-left: 0px;
+            padding-right: 0px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -826,6 +842,8 @@
             width: 552px;
             display: flex;
             flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .webstudio-our-team-cards-employee:nth-child(3) {
@@ -906,22 +924,25 @@
 
         .webstudio-footer-home {
             width: 768px;
-            height: 454px;
         }
 
-        .webstudio-footer-tablet-form {
+        .webstudio-footer-home-container {
+            width: 496px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .webstudio-footer-tablet-form-container {
             width: 496px;
             display: flex;
         }
 
         .webstudio-footer-social-media-container {
             margin-left: 24px;
-        }
-        
-        .webstudio-footer-home-container {
-            width: 496px;
-            display: flex;
-            flex-wrap: wrap;
         }
 
         .webstudio-footer-form-subscribe-container {
@@ -949,13 +970,6 @@
 
         /* filter services */
 
-        .webstudio-filter-container {
-            width: 736px;
-            height: 2500px;
-            display: flex;
-            justify-content: center;
-        }
-
         .webstudio-filter-buttons {
             width: 586px;
             height: 48px;
@@ -981,6 +995,14 @@
         .webstudio-filter-portfolio-jobs-cards-items {
             margin-left: 0px;
             padding-left: 24px;
+        }
+
+        .webstudio-filter-portfolio-jobs-cards-items:nth-child(1) {
+            margin-bottom: 72px;
+        }
+
+        .webstudio-filter-portfolio-jobs-cards-items:nth-child(7) {
+            margin-bottom: 72px;
         }
 
 }
@@ -1071,11 +1093,21 @@
             width: 264px;
         }
 
-        /* .webstudio-services-text-item:nth-child(2) {
-            margin-left: 24px;
-        } */
+        /* our team */
+
+        .webstudio-our-team-cards {
+            width: 1128px;
+        }
 
         /* customers */
+
+        .webstudio-our-customers-container {
+            width: 1158px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
 
         .webstudio-our-customers-list-item:is(:hover, :focus) .webstudio-our-customers-list-item-icon {
             fill: var(--Pressed-state);
@@ -1097,21 +1129,15 @@
             border-bottom: 1px solid var(--Accent);
         }
 
-        /* cards filter */
-
-        .webstudio-filter-container-responsive {
-            width: 1128px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
         /* footer */
 
-        .webstudio-footer-tablet-form {
+        .webstudio-footer-home-container {
+            width: 1158px;
             display: flex;
+            flex-direction: row;
         }
 
-        .webstudio-footer-home-container {
+        .webstudio-footer-tablet-form-container {
             display: flex;
         }
 
@@ -1125,6 +1151,10 @@
 
         .webstudio-services-style-buttons-items:first-child {
             margin-left: 0px;
+        }
+
+        .webstudio-footer-form-subscribe-container {
+            width: 453px;
         }
 
 }
