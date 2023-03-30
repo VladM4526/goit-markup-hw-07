@@ -267,14 +267,21 @@
             margin-top: 96px;
         }
 
+        .webstudio-services-container {
+            width: 396px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
         .webstudio-services-text-list {
-            padding: 0px 16px;
             display: flex;
             flex-wrap: wrap;
+            gap: 72px 16px;
         }
 
         .webstudio-services-title {
-            width: 396px;
             font-weight: 700;
             font-size: 36px;
             line-height: 1.1;
@@ -285,27 +292,11 @@
         }
 
         .webstudio-services-title-text {
-            width: 396px;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: var(--Text);
-        }
-
-        .webstudio-services-text-item:nth-child(2) {
-            margin-left: 0px;
-            margin-top: 72px;
-        }
-
-        .webstudio-services-text-item:nth-child(3) {
-            margin-left: 0px;
-            margin-top: 72px;
-        }
-
-        .webstudio-services-text-item:nth-child(4) {
-            margin-left: 0px;
-            margin-top: 72px;
         }
 
         .webstudio-services-item-svg {
@@ -321,40 +312,42 @@
         /* our team */
 
         .webstudio-our-team {
-            height: 2264px;
+            height: 2248px;
             margin-top: 96px;
         }
 
         .webstudio-our-team-title {
             width: 162px;
-            margin-left: 133px;
-            margin-bottom: 72px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .webstudio-our-team-container {
             width: 428px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
         .webstudio-our-team-cards {
-            width: 264px;
             display: flex;
             flex-wrap: wrap;
-            margin-left: 82px;
+            gap: 72px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .webstudio-our-team-cards-employee:nth-child(2) {
             margin-left: 0px;
-            margin-top: 72px;
         }
 
         .webstudio-our-team-cards-employee:nth-child(3) {
             margin-left: 0px;
-            margin-top: 72px;
         }
 
         .webstudio-our-team-cards-employee:nth-child(4) {
             margin-left: 0px;
-            margin-top: 72px;
         }
 
         /* customers */
@@ -364,6 +357,19 @@
             flex-wrap: wrap;
         }
 
+        .webstudio-our-customers-container {
+            width: 396px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .webstudio-our-customers-list {
+            display: flex;
+            gap: 72px 16px;
+        }
+
         .webstudio-our-customers-title {
             margin-top: 96px;
             margin-bottom: 72px;
@@ -371,32 +377,27 @@
 
         .webstudio-our-customers-list-item {
             width: 190px;
-            height: 88px;
         }
-
+ 
         .webstudio-our-customers-list-item:nth-child(2) {
-            margin-left: 24px;
+            margin-left: 0px;
         }
 
         .webstudio-our-customers-list-item:nth-child(3) {
             margin-left: 0px;
-            margin-top: 72px;
         }
 
         .webstudio-our-customers-list-item:nth-child(4) {
-            margin-left: 24px;
-            margin-top: 72px;
+            margin-left: 0px;
         }
 
         .webstudio-our-customers-list-item:nth-child(5) {
             margin-left: 0px;
-            margin-top: 72px;
         }
 
         .webstudio-our-customers-list-item:nth-child(6) {
-            margin-left: 24px;
-            margin-top: 72px;
-        }
+            margin-left: 0px;
+        } 
 
         /* page portfolio */
 
@@ -493,31 +494,53 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .webstudio-footer-tablet-form-container {
+            width: 398px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
         .webstudio-footer-container-text {
+            width: 268px;
             display: flex;
             align-items: center;
             flex-direction: column;
-            margin-right: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-bottom: 72px;
         }
 
         .webstudio-footer-text {
             width: 268px;
-            height: 72px;
         }
 
         .webstudio-footer-social-media-container {
+            width: 208px;
             text-align: center;
-            margin-left: 30px;
-            margin-top: 72px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 72px;
         }
 
         .webstudio-footer-form-subscribe-container {
-            margin-left: 0px;
-            margin-top: 72px;
+            width: 398px;
             text-align: center;
+            margin-left: 0px;
+            margin-right: auto;
+        }
+
+        .webstudio-footer-form-subscribe-form {
+            width: 398px;
         }
 
         .webstudio-footer-form-subscribe-input-button-container {
@@ -751,20 +774,14 @@
         }
 
         .webstudio-services-container {
-            width: 736px;
+            width: 768px;
             padding: 96px 16px;
         }
 
         .webstudio-services-text-list {
-            width: 736px;
-            height: 312px;
             display: flex;
             flex-wrap: wrap;
-        }
-
-        .webstudio-services-text-item {
-            width: 356px;
-            height: 120px;
+            gap: 72px 24px;
         }
 
         .webstudio-services-title {
@@ -778,24 +795,11 @@
 
         .webstudio-services-title-text {
             width: 356px;
-            height: 72px;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: var(--Text);
-        }
-
-        .webstudio-services-text-item:nth-child(2) {
-            margin-left: 24px;
-        }
-
-        .webstudio-services-text-item:nth-child(3) {
-            margin-left: 0px;
-        }
-
-        .webstudio-services-text-item:nth-child(4) {
-            margin-left: 24px;
         }
 
         /* our jobs */
@@ -1056,11 +1060,18 @@
 
         /* services */
 
-        .webstudio-services {
-            width: 1128px;
-            margin-left: auto;
-            margin-right: auto;
+        .webstudio-services-text-list {
+            display: flex;
+            gap: 24px;
         }
+
+        .webstudio-services-text-item {
+            width: 264px;
+        }
+
+        /* .webstudio-services-text-item:nth-child(2) {
+            margin-left: 24px;
+        } */
 
         /* customers */
 

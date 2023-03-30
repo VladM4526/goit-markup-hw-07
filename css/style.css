@@ -437,6 +437,7 @@
 }
 
 .webstudio-services-container {
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -475,22 +476,18 @@
 }
 
 .webstudio-services-text-item {
-    margin-left: 24px;
     list-style: none;
 }
 
 .webstudio-services-item-svg {
     width: 264px;
-    height: 112px;
     background: var(--Light);
     margin-bottom: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 24px 100px;
 }
 
 .webstudio-services-item-icon {
+    width: 64px;
     height: 64px;
 }
 
@@ -543,7 +540,6 @@
 
 .webstudio-our-team {
     background: var(--Light);
-    height: 732px;
 }
 
 .webstudio-our-team-container {
@@ -882,7 +878,6 @@
 
 .webstudio-footer-social-media-container {
     width: 208px;
-    height: 80px;
     margin-left: 120px;
 }
 
