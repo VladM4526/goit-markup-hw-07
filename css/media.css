@@ -1,3 +1,99 @@
+@media screen and (max-width: 320px) {
+    :root {
+            --Primary-Brand: #4D5AE5;
+            --Primary-Brand-rgba: rgba(77, 90, 229, 0.9);
+            --Pressed-state: #404BBF;
+            --modal-overlay: rgba(46, 47, 66, 0.4);
+            --Dark: #2E2F42;
+            --Text: #434455;
+            --Light: #F4F4FD;
+            --White: #FFFFFF;
+            --Accent: #E7E9FC;
+            --Cloud: #F4F4FD;
+            --Subtle-Text: #8E8F99;
+            --Success: #31D0AA;
+            --border-button: rgba(0, 0, 0, 0.1);
+            --input-footer-rgba: rgba(255, 255, 255, 0.3);
+            --input-footer-color-input: rgba(255, 255, 255, 0.6);
+            --input-modal-form-border: rgba(33, 33, 33, 0.2);
+            --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);
+            --button-menu-mobile: #000000;
+        }
+
+        /* menu section */
+
+        .webstudio-header {
+            max-width: 100%;
+        }
+
+        .webstudio-nav-menu-mobile-container {
+            max-width: 100%;
+        }
+
+        .webstudio-header-responsive-icon {
+            max-width: 100%;
+            position: absolute;
+            right: 110px;
+            top: 0px;
+        }
+
+        /* Effective Solutions for Your Business */
+
+        .webstudio-service {
+            max-width: 100%;
+        }
+
+        .webstudio-modal-overlay {
+            max-width: 100%;
+        }
+
+        .webstudio-modal-window {
+            max-width: 100%;
+        }
+
+        /* services */
+
+        .webstudio-services-container {
+            max-width: 100%;
+        }
+
+        /* our team */
+
+        .webstudio-our-team-container {
+            max-width: 100%;
+        }
+
+        /* customers */
+
+        .webstudio-our-customers-container {
+            max-width: 100%;
+        }
+
+        /* Footer */
+
+        .webstudio-footer-home-container {
+            max-width: 100%;
+        }
+
+        .webstudio-footer-form-subscribe-container {
+            max-width: 100%;
+        }
+
+        .webstudio-footer-form-subscribe-input {
+            max-width: 100%;
+        }
+
+        .webstudio-footer-form-subscribe-form {
+            max-width: 100%;
+        }
+
+        .webstudio-footer-form-subscribe-input-button-container {
+            max-width: 100%;
+        }
+
+}
+
+
 @media screen and (max-width: 480px) {
 
 
@@ -50,17 +146,13 @@
             display: none;
             width: 100%;
             height: 100%;
+            overflow-y: scroll;
             background: var(--White);
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             z-index: 1;
-        }
-
-        .webstudio-header-container {
-            margin-right: 51px;
-            margin-left: 40px;
         }
 
         .webstudio-nav {
@@ -109,6 +201,9 @@
 
         .webstudio-header-container {
             width: 337px;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin: 80px 40px;
         }
 
         .webstudio-header-menu-responsive {
@@ -130,7 +225,6 @@
         }
 
         .webstudio-header-menu-list {
-            margin-top: 80px;
             margin-left: 0px;
             margin-right: 0px;
         }
@@ -175,7 +269,7 @@
         .webstudio-header-contant-list-link-active {
             font-style: normal;
             font-weight: 600;
-            font-size: 34px;
+            font-size: 36px;
             line-height: 1.1;
             text-transform: capitalize;
             text-decoration: none;
@@ -252,12 +346,22 @@
             width: 169px;
         }
 
+        .webstudio-modal-form-data {
+            width: 360px;
+        }
+
+        .webstudio-modal-form-input {
+            width: 360px;
+        }
+
         /* modal */
 
         .webstudio-modal-window {
+            width: 392px;
             position: relative;
             left: 50%;
             top: 50%;
+            padding: 72px 16px;
         }
 
         /* services */
@@ -516,7 +620,6 @@
         }
 
         .webstudio-footer-tablet-form-container {
-            width: 398px;
             margin-left: auto;
             margin-right: auto;
             padding-left: 0px;
@@ -548,7 +651,6 @@
         }
 
         .webstudio-footer-form-subscribe-container {
-            width: 398px;
             text-align: center;
             margin-left: 0px;
             margin-right: auto;
@@ -568,7 +670,6 @@
         }
 
         .webstudio-footer-form-subscribe-input {
-            width: 398px;
             margin: 0 auto;
         }
 
@@ -844,6 +945,10 @@
             flex-wrap: wrap;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .webstudio-our-team-cards-employee-img {
+            display: block;
         }
 
         .webstudio-our-team-cards-employee:nth-child(3) {
