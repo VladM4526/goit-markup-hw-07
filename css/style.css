@@ -95,9 +95,8 @@
 }
 
 .webstudio-header-menu-list {
-    margin-left: 76px;
     list-style: none;
-    position: relative;
+    margin-left: 76px;
 }
 
 .webstudio-header-menu-item {
@@ -108,6 +107,21 @@
 .webstudio-header-contant-list-item {
     list-style: none;
     display: inline-block;
+}
+
+.webstudio-header-menu-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: var(--Dark);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.webstudio-header-menu-item .webstudio-header-menu-link-active {
+    color: var(--Pressed-state);
 }
 
 .webstudio-header-menu-link:is(:hover, :focus) {
@@ -125,9 +139,31 @@
     list-style: none;
 }
 
+.webstudio-header-contant-list-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--Text);
+}
+
+.webstudio-header-menu-link-active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--Pressed-state);
+    border-bottom: 1px solid var(--Pressed-state);
+    border-radius: 2px;
+    position: absolute;
+    top: 46px;
+    left: 0;
+}
+
 .webstudio-header-contant-list {
     display: inline-block;
-    margin-left: 40px;
 }
 
 .webstudio-header-contant-list-link:is(:hover, :focus) {
@@ -147,7 +183,7 @@
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)),
         url("../images/people-office-edited.jpg");
-    background-size: 1440px;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 188px 0;
     margin-left: auto;
@@ -155,10 +191,9 @@
 }
 
 .webstudio-service-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .webstudio-service-text {
@@ -546,6 +581,7 @@
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -561,7 +597,6 @@
 
 .webstudio-our-team-cards {
     width: 264px;
-    height: 428px;
     display: flex;
     margin-top: 72px;
 }
@@ -661,7 +696,7 @@
 
 .webstudio-our-customers-list-item {
     width: 168px;
-    height: 88px;
+    padding: 16px 32px;
     border: 1px solid var(--Subtle-Text);
     border-radius: 4px;
     display: flex;
@@ -931,7 +966,6 @@
 
 .webstudio-footer-form-subscribe-form {
     width: 453px;
-    height: 80px;
 }
 
 .webstudio-footer-form-subscribe-label {
@@ -949,7 +983,6 @@
 
 .webstudio-footer-form-subscribe-input {
     width: 264px;
-    height: 40px;
     border: none;
     outline: none;
     background-color: transparent;
@@ -967,7 +1000,6 @@
 
 .webstudio-footer-form-subscribe-button {
     width: 165px;
-    height: 40px;
     border: none;
     outline: none;
     background: var(--Primary-Brand);
