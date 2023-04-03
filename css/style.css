@@ -665,6 +665,11 @@
 /* Our Customers */
 
 .webstudio-our-customers-container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 120px;
 }
 
