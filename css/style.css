@@ -37,6 +37,7 @@
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    display: flex;
 }
 
 .webstudio-header {
@@ -109,6 +110,10 @@
     display: inline-block;
 }
 
+.webstudio-header-contant-list-item:last-child {
+    margin-left: 40px;
+}
+
 .webstudio-header-menu-link {
     display: block;
     position: relative;
@@ -177,24 +182,6 @@
 }
 
 /*Effective Solutions for Your Business*/
-
-.webstudio-service {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
-        url("../images/people-office-edited.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 188px 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.webstudio-service-container {
-    width: 496px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .webstudio-service-text {
     width: 496px;
@@ -511,6 +498,8 @@
 }
 
 .webstudio-services-text-item {
+    width: 264px;
+    margin-left: 24px;
     list-style: none;
 }
 
@@ -966,6 +955,7 @@
 
 .webstudio-footer-form-subscribe-form {
     width: 453px;
+    display: flex;
 }
 
 .webstudio-footer-form-subscribe-label {

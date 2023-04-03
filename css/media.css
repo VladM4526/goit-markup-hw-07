@@ -26,33 +26,44 @@
             max-width: 100%;
         }
 
-        .webstudio-nav-menu-mobile-container {
-            max-width: 100%;
-        }
-
         .webstudio-header-container {
             max-width: 100%;
         }
 
-        .webstudio-header-menu-modal {
+        .webstudio-nav-menu-mobile-container {
             max-width: 100%;
+        }
+
+        .webstudio-header-menu-modal .webstudio-header-container {
+            min-width: 100%;
         }
 
         .webstudio-header-responsive-icon {
             max-width: 100%;
-            position: absolute;
+            position: relative;
             right: 110px;
             top: 0px;
+        }
+
+        .webstudio-header-container .webstudio-header-menu-modal {
+            max-width: 100%;
         }
 
         .webstudio-header-social-media {
             max-width: 100%;
         }
 
-        .webstudio-modal-menu-close-button {
-            max-width: 100%;
+        .webstudio-header-menu-modal .webstudio-modal-menu-close-button {
             position: absolute;
-            left: 0;
+            left: 270px;
+        }
+
+        .webstudio-header-contant {
+            max-width: 100%;
+        }
+
+        .webstudio-header-social-media {
+            max-width: 100%;
         }
 
         /* Effective Solutions for Your Business */
@@ -219,6 +230,8 @@
 
         .webstudio-header-container {
             width: 428px;
+            display: flex;
+            flex-direction: column;
             padding: 80px 40px;
         }
 
@@ -228,7 +241,7 @@
 
         .webstudio-header-menu-link {
             font-weight: 700;
-            font-size: 36px;
+            font-size: 37px;
             line-height: 1.1;
             letter-spacing: 0.02em;
             text-transform: capitalize;
@@ -247,6 +260,10 @@
 
         .webstudio-header-menu-item:nth-child(3) {
             margin-top: 40px;
+            margin-left: 0px;
+        }
+
+        .webstudio-header-contant-list-item:last-child {
             margin-left: 0px;
         }
 
@@ -295,7 +312,7 @@
         .webstudio-header-contant-list-link-active {
             font-style: normal;
             font-weight: 600;
-            font-size: 36px;
+            font-size: 34px;
             line-height: 1.1;
             text-transform: capitalize;
             text-decoration: none;
@@ -403,6 +420,11 @@
             width: 396px;
             padding-left: 0px;
             padding-right: 0px;
+        }
+
+        .webstudio-services-text-item {
+            width: 396px;
+            margin-left: 0px;
         }
 
         .webstudio-services-text-list {
@@ -764,7 +786,7 @@
         }
 
      .webstudio-service {
-        padding: 112px 136px 100px;
+        padding: 112px 136px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)), 
@@ -775,6 +797,49 @@
             margin-left: auto;
             margin-right: auto;
     } 
+
+}
+
+@media (min-width: 1200px) {
+
+    :root {
+            --Primary-Brand: #4D5AE5;
+            --Primary-Brand-rgba: rgba(77, 90, 229, 0.9);
+            --Pressed-state: #404BBF;
+            --modal-overlay: rgba(46, 47, 66, 0.4);
+            --Dark: #2E2F42;
+            --Text: #434455;
+            --Light: #F4F4FD;
+            --White: #FFFFFF;
+            --Accent: #E7E9FC;
+            --Cloud: #F4F4FD;
+            --Subtle-Text: #8E8F99;
+            --Success: #31D0AA;
+            --border-button: rgba(0, 0, 0, 0.1);
+            --input-footer-rgba: rgba(255, 255, 255, 0.3);
+            --input-footer-color-input: rgba(255, 255, 255, 0.6);
+            --input-modal-form-border: rgba(33, 33, 33, 0.2);
+            --teatarea-comment-rgba: rgba(117, 117, 117, 0.5);
+        }
+
+     .webstudio-service {
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), 
+            url("../images/people-office-edited.jpg");
+            background-repeat: no-repeat;
+            background-size: 1440px;
+            background-position: center;
+            margin-left: auto;
+            margin-right: auto;
+    } 
+
+    .webstudio-service-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
 
@@ -840,8 +905,8 @@
             margin-left: 0;
         }
 
-        .webstudio-header-contant-list-item:first-child {
-            margin-right: 0px;
+        .webstudio-header-contant-list-item:nth-child(2) {
+            margin-left: 0px;
         }
 
         /* menu */
@@ -912,9 +977,12 @@
 
         .webstudio-service-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
+        }
+
+        .webstudio-service-button {
+            margin-top: 40px;
         }
 
         /* Effective Solutions for Your Business modal */
@@ -1162,9 +1230,9 @@
     }
 
     .webstudio-service-container {
-        width: 496px;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* menu */
@@ -1192,15 +1260,15 @@
 
         /* contact */
 
-        .webstudio-header-contant-list-item:nth-child(2) {
-            margin-left: 40px;
-        }
-
         /* services */
 
         .webstudio-services-text-list {
             display: flex;
-            gap: 24px;
+            gap: 72px 24px;
+        }
+
+        .webstudio-services-text-item {
+            margin-left: 0px;
         }
 
         /* customers */
@@ -1214,6 +1282,12 @@
         .webstudio-our-customers-list-item:hover {
             border: 1px solid var(--Pressed-state);
             cursor: pointer;
+        }
+
+        /* footer */
+
+        .webstudio-footer-form-subscribe-form {
+            display: flex;
         }
 
         /* page portfolio */
