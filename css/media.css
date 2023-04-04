@@ -27,15 +27,17 @@
         }
 
         .webstudio-header-container {
-            max-width: 100%;
+            max-width: 300px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .webstudio-nav {
+            width: 200px;
         }
 
         .webstudio-nav-menu-mobile-container {
             max-width: 100%;
-        }
-
-        .webstudio-header-menu-modal .webstudio-header-container {
-            min-width: 100%;
         }
 
         .webstudio-header-responsive-icon {
@@ -45,12 +47,8 @@
             top: 0px;
         }
 
-        .webstudio-header-container .webstudio-header-menu-modal {
-            max-width: 100%;
-        }
-
-        .webstudio-header-social-media {
-            max-width: 100%;
+        .webstudio-header-menu-modal {
+            max-width: 320px;
         }
 
         .webstudio-header-menu-modal .webstudio-modal-menu-close-button {
@@ -59,11 +57,21 @@
         }
 
         .webstudio-header-contant {
-            max-width: 100%;
+            width: 200px;
         }
 
         .webstudio-header-social-media {
-            max-width: 100%;
+            max-width: 0px;
+        }
+
+        .webstudio-header-social-media-container {
+            max-width: 200px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .webstudio-header-social-media-list {
+            padding-right: 0px;
         }
 
         /* Effective Solutions for Your Business */
@@ -73,11 +81,53 @@
         }
 
         .webstudio-modal-overlay {
-            max-width: 100%;
+            max-width: 320px;
         }
 
         .webstudio-modal-window {
-            max-width: 100%;
+            max-width: 240px;
+        }
+
+        .webstudio-modal-form-data {
+            max-width: 250px;
+        }
+
+        .webstudio-modal-form-title {
+            max-width: 300px;
+        }
+
+        .webstudio-modal-form-input {
+            max-width: 70%;
+        }
+
+        .webstudio-modal-form-item-comment {
+            max-width: 70%;
+        }
+
+        .webstudio-modal-form-data-label-container {
+            max-width: 230px;
+        }
+
+        .webstudio-modal-form-data-title {
+            max-width: 200px;
+        }
+
+        .webstudio-modal-form-container {
+            max-width: 290px;
+        }
+
+        .webstudio-modal-form-data-label-checkbox {
+            max-width: 70%;
+        }
+        
+        .webstudio-modal-window-close-button {
+            position: absolute;
+            left: 190px;
+        }
+
+        .webstudio-modal-form-data-button-container {
+            position: absolute;
+            left: 30px;
         }
 
         /* services */
@@ -423,7 +473,6 @@
         }
 
         .webstudio-services-text-item {
-            width: 396px;
             margin-left: 0px;
         }
 
@@ -873,7 +922,8 @@
 
         .webstudio-header-container {
             width: 768px;
-            padding: 24px 16px 0px 16px;
+            display: flex;
+            align-items: center;
         }
         
         /* menu */
@@ -888,6 +938,7 @@
             width: 119px;
             margin-left: 118px;
             padding-bottom: 10px;
+            padding-top: 24px;
         }
 
         .webstudio-header-contant-list-link {
@@ -1092,10 +1143,11 @@
 
         .webstudio-our-customers-container {
             width: 552px;
-            margin-left: auto;
-            margin-right: auto;
+            text-align: center;
             padding-left: 0px;
             padding-right: 0px;
+            margin-right: 108px;
+            margin-left: 108px;
         }
 
         .webstudio-our-customers-list {
