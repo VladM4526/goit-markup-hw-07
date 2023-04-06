@@ -1,30 +1,16 @@
-// menu
+// modal
 
 (() => {
-  const mobileMenu = document.querySelector('.webstudio-header-menu-modal');
-  const openMenuBtn = document.querySelector('.webstudio-header-responsive-menu-logo-icon');
-  const closeMenuBtn = document.querySelector('.webstudio-modal-menu-close-button');
-
-  const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
-
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
-  };
-
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
-
-  // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 481px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
+    const refs = {
+      openMenuBtn: document.querySelector("[data-menu-open]"),
+      closeMenuBtn: document.querySelector("[data-menu-close]"),
+      menu: document.querySelector("[data-menu]"),
+    };
+  
+    refs.openMenuBtn.addEventListener("click", toggleMenu);
+    refs.closeMenuBtn.addEventListener("click", toggleMenu);
+  
+    function toggleMenu() {
+      refs.menu.classList.toggle("is-open");
+    }
 })();

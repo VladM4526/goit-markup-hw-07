@@ -498,7 +498,6 @@
 }
 
 .webstudio-services-text-item {
-    width: 264px;
     margin-left: 24px;
     list-style: none;
 }
@@ -705,6 +704,17 @@
 
 .webstudio-our-customers-list-item:first-child {
     margin-left: 0px;
+}
+
+.webstudio-our-customers-list-item:is(:hover, :focus) .webstudio-our-customers-list-item-icon {
+    fill: var(--Pressed-state);
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.webstudio-our-customers-list-item:hover {
+    border: 1px solid var(--Pressed-state);
+    cursor: pointer;
 }
 
 /*Filter portfolio jobs*/

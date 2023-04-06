@@ -26,28 +26,30 @@
             max-width: 100%;
         }
 
-        .webstudio-header-container {
-            max-width: 300px;
-            margin-left: 0px;
-            margin-right: 0px;
-        }
-
-        .webstudio-nav {
-            width: 200px;
-        }
-
         .webstudio-nav-menu-mobile-container {
+            max-width: 100%;
+            display: flex;
+        }
+
+        .webstudio-header-responsive-menu-logo-icon {
             max-width: 100%;
         }
 
         .webstudio-header-responsive-icon {
-            max-width: 100%;
             position: relative;
-            right: 110px;
-            top: 0px;
+            right: 120px;
+            top: 0;
+        }
+
+        .webstudio-header-container {
+            max-width: 100%;
         }
 
         .webstudio-header-menu-modal {
+            max-width: 320px;
+        }
+
+        .webstudio-nav {
             max-width: 320px;
         }
 
@@ -57,21 +59,35 @@
         }
 
         .webstudio-header-contant {
-            width: 200px;
+            max-width: 100%;
         }
 
         .webstudio-header-social-media {
-            max-width: 0px;
+            max-width: 100%;
         }
 
         .webstudio-header-social-media-container {
-            max-width: 200px;
-            display: flex;
-            flex-wrap: wrap;
+           max-width: 100%;
         }
 
-        .webstudio-header-social-media-list {
-            padding-right: 0px;
+        .webstudio-header-social-media-list:nth-child(2) {
+            margin-left: 0px;
+            position: absolute;
+            left: 140px;
+        }
+
+        .webstudio-header-social-media-list:nth-child(3) {
+            margin-left: 0px;
+            position: relative;
+            left: -41px;
+            top: 60px;
+        }
+
+        .webstudio-header-social-media-list:nth-child(4) {
+            margin-left: 0px;
+            position: relative;
+            left: 22px;
+            top: 60px;
         }
 
         /* Effective Solutions for Your Business */
@@ -80,56 +96,37 @@
             max-width: 100%;
         }
 
+        /* modal */
+
         .webstudio-modal-overlay {
             max-width: 320px;
         }
 
         .webstudio-modal-window {
-            max-width: 240px;
+            max-width: 100%;
         }
 
         .webstudio-modal-form-data {
-            max-width: 250px;
-        }
-
-        .webstudio-modal-form-title {
-            max-width: 300px;
-        }
-
-        .webstudio-modal-form-input {
-            max-width: 70%;
-        }
-
-        .webstudio-modal-form-item-comment {
-            max-width: 70%;
+            max-width: 100%;
         }
 
         .webstudio-modal-form-data-label-container {
-            max-width: 230px;
+            max-width: 290px;
         }
 
-        .webstudio-modal-form-data-title {
-            max-width: 200px;
-        }
-
-        .webstudio-modal-form-container {
+        .webstudio-modal-form-item-comment {
             max-width: 290px;
         }
 
         .webstudio-modal-form-data-label-checkbox {
-            max-width: 70%;
+            max-width: 290px;
+            padding: 0;
+        }
+
+        .webstudio-modal-form-input {
+            max-width: 290px;
         }
         
-        .webstudio-modal-window-close-button {
-            position: absolute;
-            left: 190px;
-        }
-
-        .webstudio-modal-form-data-button-container {
-            position: absolute;
-            left: 30px;
-        }
-
         /* services */
 
         .webstudio-services-container {
@@ -139,6 +136,10 @@
         /* our team */
 
         .webstudio-our-team-container {
+            max-width: 100%;
+        }
+
+        .webstudio-our-team-cards {
             max-width: 100%;
         }
 
@@ -518,18 +519,14 @@
 
         .webstudio-our-team-container {
             width: 428px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 0px;
-            padding-right: 0px;
+            padding-left: 82px;
+            padding-right: 82px;
         }
 
         .webstudio-our-team-cards {
             display: flex;
             flex-wrap: wrap;
             gap: 72px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .webstudio-our-team-cards-employee:nth-child(2) {
@@ -849,7 +846,7 @@
 
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
 
     :root {
             --Primary-Brand: #4D5AE5;
