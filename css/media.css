@@ -928,7 +928,7 @@
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 769px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
         :root {
             --Primary-Brand: #4D5AE5;
@@ -1029,6 +1029,7 @@
             text-decoration: none;
             color: var(--Dark);
             position: relative;
+            padding-top: 24px;
         }
 
         .webstudio-header-menu-item:first-child {
@@ -1314,9 +1315,13 @@
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 769px) and (max-width: 1158px) {
 
     /* header */
+
+    .webstudio-header {
+        padding: 24px 0 0;
+    }
 
     .webstudio-service {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),
@@ -1353,8 +1358,7 @@
             text-decoration: none;
             color: var(--Dark);
             position: relative;
-            padding-top: 24px;
-            padding-bottom: 24px;
+            padding-top: 0px;
         }
 
         .webstudio-header-menu-item:first-child {
