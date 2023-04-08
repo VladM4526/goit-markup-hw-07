@@ -180,7 +180,7 @@
         }
 
         .webstudio-footer-form-subscribe-input {
-            max-width: 300px;
+            max-width: 290px;
         }
 
         .webstudio-footer-form-subscribe-form {
@@ -1240,13 +1240,11 @@
         /* footer */
 
         .webstudio-footer-home-container {
-            width: 496px;
+            width: 768px;
             display: flex;
             flex-wrap: wrap;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 0px;
-            padding-right: 0px;
+            padding-left: 108px;
+            padding-right: 164px;
         }
 
         .webstudio-footer-social-media-container {
@@ -1254,7 +1252,6 @@
         }
 
         .webstudio-footer-form-subscribe-container {
-            width: 496px;
             display: flex;
             flex-direction: column;
             margin-left: 0px;
@@ -1315,13 +1312,9 @@
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1158px) {
 
     /* header */
-
-    .webstudio-header {
-        padding: 24px 0 0;
-    }
 
     .webstudio-service {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7),
@@ -1358,7 +1351,6 @@
             text-decoration: none;
             color: var(--Dark);
             position: relative;
-            padding-top: 0px;
         }
 
         .webstudio-header-menu-item:first-child {
